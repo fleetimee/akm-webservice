@@ -3,10 +3,11 @@
   <img src="https://expressjs.com/images/express-facebook-share.png" width="auto" height="64px">
 </div>
 
-# express-sequelize-boilerplate
-A boilerplate for express.js.
+# akm-webservice
+REST API using Express, Sequelize, PostgreSQL
 
 ## Getting Started 
+
 
 ```bash
 # Clone the repository
@@ -24,6 +25,11 @@ cp .env.example .env
 # Running the boilerplate:
 yarn dev
 ```
+
+## API Endpoints
+https://documenter.getpostman.com/view/12616413/UVyvvuHk
+
+
 
 ## Configuration
 
@@ -63,6 +69,4 @@ yarn sequelize db:migrate:undo:all
 yarn sequelize db:seed:all
 ```
 
-<h5 align="center">
-  ☕ Code and Coffee
-</h5>
+
