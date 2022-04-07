@@ -11,10 +11,10 @@ REST API using Express, Sequelize, PostgreSQL
 
 ```bash
 # Clone the repository
-git clone https://github.com/gadfaria/express-sequelize-boilerplate.git
+git clone https://github.com/fleetimee/akm-webservice.git
 
 # Enter into the directory
-cd express-sequelize-boilerplate/
+cd akm-webservice/
 
 # Install the dependencies
 yarn
