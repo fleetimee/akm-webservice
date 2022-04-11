@@ -3,6 +3,14 @@ export const Errors = {
     code: "ADDRESS_ALREADY_EXISTS",
     message: "Address already exists",
   },
+  GRUPNAME_ALREADY_EXISTS: {
+    code: "GRUPNAME_ALREADY_EXISTS",
+    message: "Grupname already exists",
+  },
+  NONEXISTENT_GRUP: {
+    code: "NONEXISTENT_GRUP",
+    message: "Grup does not exist",
+  },
   NONEXISTENT_ADDRESS: {
     code: "NONEXISTENT_ADDRESS",
     message: "Address not found",
