@@ -26,9 +26,16 @@ class Tbl_user extends Model {
     return this;
   }
 
-  static associate(models) {
-    this.belongsTo(models.Tbl_grup, { foreignKey: "GRUP_ID" });
-  }
+  // static associate(models) {
+  //   this.belongsTo(models.Tbl_grup, { foreignKey: "GRUP_ID" });
+  // }
+
+  // static associate(models) {
+  //   this.belongsToMany(models.Tbl_grup, {
+  //     through: "Tbl_grup",
+  //     foreignKey: "GRUP_ID",
+  //   });
+  // }
 }
 
 export default Tbl_user;

@@ -2,10 +2,10 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.changeColumn("TBL_USER", "GRUP_ID", {
+    await queryInterface.changeColumn("TBL_GRUP", "GRUP_ID", {
       type: Sequelize.CHAR(4),
       references: {
-        model: "Tbl_grup",
+        model: "Tbl_user",
         key: "GRUP_ID",
       },
     });
@@ -18,10 +18,10 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-    await queryInterface.changeColumn("TBL_USER", "GRUP_ID", {
+    await queryInterface.changeColumn("TBL_GRUP", "GRUP_ID", {
       references: {
         type: Sequelize.STRING,
-        model: "Tbl_grup",
+        model: "Tbl_user",
         key: "GRUP_ID",
       },
     });

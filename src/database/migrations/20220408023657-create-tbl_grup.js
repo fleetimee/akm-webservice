@@ -19,6 +19,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("GRUP_ID");
+    await queryInterface.dropTable("TBL_GRUP");
   },
 };
