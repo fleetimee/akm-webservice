@@ -1,42 +1,33 @@
-import Sequelize, { Model } from "sequelize";
+import Sequilize, { Model } from "sequelize";
 
 class Tbl_grup extends Model {
   static init(sequelize) {
     super.init(
       {
-        GRUP_ID: {
+        nama_grup: {
+          type: Sequilize.STRING,
           allowNull: false,
-          primaryKey: true,
-          type: Sequelize.CHAR,
         },
-        GRUP_NAME: {
-          allowNull: false,
-          type: Sequelize.STRING,
-        },
-        GRUP_DISKRIPSI: {
-          type: Sequelize.STRING,
+        deskripsi: {
+          type: Sequilize.STRING,
         },
       },
       {
         sequelize,
-        timestamps: false,
-        tableName: "TBL_GRUP",
+        freezeTableName: true,
       }
     );
-
-    return this;
   }
 
-  // static associate(models) {
-  //   this.belongsToMany(models.Tbl_user, {
-  //     through: "Tbl_user",
-  //     foreignKey: "GRUP_ID",
-  //   });
-  // }
-
-  // static associate(models) {
-  //   this.belongsTo(models.Tbl_user, { foreignKey: "GRUP_ID" });
-  // }
+  static associate(models) {
+    this.hasMany(models.Tbl_user, {
+      foreignKey: {
+        name: "grupId",
+        allowNull: false,
+      },
+      as: "user",
+    });
+  }
 }
 
 export default Tbl_grup;

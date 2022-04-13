@@ -1,4 +1,4 @@
-import User from "../models/User";
+import Tbl_user from "../models/Tbl_user";
 import JwtService from "../services/jwt.service";
 import * as Yup from "yup";
 import { Errors } from "../utils/errors";
@@ -7,22 +7,22 @@ let loginController = {
   login: async (req, res) => {
     try {
       const schema = Yup.object().shape({
-        email: Yup.string().email().required(),
+        username: Yup.string().required(),
         password: Yup.string().required(),
       });
 
       if (!(await schema.isValid(req.body)))
         return res.status(400).json({ error: Errors.VALIDATION_FAILS });
 
-      let { email, password } = req.body;
+      let { username, password } = req.body;
 
-      const user = await User.findOne({ where: { email } });
+      const user = await Tbl_user.findOne({ where: { username, password } });
 
       if (!user)
         return res.status(400).send({ error: Errors.NONEXISTENT_USER });
 
-      if (!(await user.checkPassword(password)))
-        return res.status(401).send({ error: Errors.WRONG_PASSWORD });
+      // if (!(await user.checkPassword(password)))
+      //   return res.status(401).send({ error: Errors.WRONG_PASSWORD });
 
       const token = JwtService.jwtSign(user.id);
 
