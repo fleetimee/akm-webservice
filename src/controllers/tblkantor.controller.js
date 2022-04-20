@@ -1,17 +1,19 @@
 import Tbl_grup from "../models/Tbl_grup";
 import Tbl_kantor from "../models/Tbl_kantor";
 import Tbl_user from "../models/Tbl_user";
-import { Errors } from "../utils/errors";
 import Tbl_menu from "../models/Tbl_menu";
+import { Errors } from "../utils/errors";
 
-let tblgrupController = {
+let tblkantorController = {
   add: async (req, res) => {
     try {
-      const tblgrup = await Tbl_grup.create({
-        nama_grup: req.body.nama_grup,
-        deskripsi: req.body.deskripsi,
+      const tblkantor = await Tbl_kantor.create({
+        nama_kantor: req.body.nama_kantor,
+        lokasi: req.body.lokasi,
+        no_hp1: req.body.no_hp1,
+        no_hp2: req.body.no_hp2,
       });
-      return res.status(200).json(tblgrup);
+      return res.status(200).json(tblkantor);
     } catch (error) {
       console.log(error);
       return res.status(500).json({ error: Errors.SERVER_ERROR });
@@ -20,25 +22,28 @@ let tblgrupController = {
 
   get: async (req, res) => {
     try {
-      const tblgrup = await Tbl_grup.findAll({
+      const tblkantor = await Tbl_kantor.findAll({
         include: [
           {
             model: Tbl_user,
             as: "user",
             include: [
               {
-                model: Tbl_kantor,
-                as: "kantor",
+                model: Tbl_grup,
+                as: "grup",
+                include: [
+                  {
+                    model: Tbl_menu,
+                    as: "menu",
+                    attributes: ["id", "nama_menu"],
+                  },
+                ],
               },
             ],
           },
-          {
-            model: Tbl_menu,
-            as: "menu",
-          },
         ],
       });
-      return res.status(200).json(tblgrup);
+      return res.status(200).json(tblkantor);
     } catch (error) {
       console.log(error);
       return res.status(500).json({ error: Errors.SERVER_ERROR });
@@ -47,7 +52,7 @@ let tblgrupController = {
 
   find: async (req, res) => {
     try {
-      const tblgrup = await Tbl_grup.findOne({
+      const tblkantor = await Tbl_kantor.findOne({
         where: {
           id: req.params.id,
         },
@@ -57,18 +62,21 @@ let tblgrupController = {
             as: "user",
             include: [
               {
-                model: Tbl_kantor,
-                as: "kantor",
+                model: Tbl_grup,
+                as: "grup",
+                include: [
+                  {
+                    model: Tbl_menu,
+                    as: "menu",
+                    attributes: ["id", "nama_menu"],
+                  },
+                ],
               },
             ],
           },
-          {
-            model: Tbl_menu,
-            as: "menu",
-          },
         ],
       });
-      return res.status(200).json(tblgrup);
+      return res.status(200).json(tblkantor);
     } catch (error) {
       console.log(error);
       return res.status(500).json({ error: Errors.SERVER_ERROR });
@@ -77,10 +85,12 @@ let tblgrupController = {
 
   update: async (req, res) => {
     try {
-      const tblgrup = await Tbl_grup.update(
+      const tblkantor = await Tbl_kantor.update(
         {
-          nama_grup: req.body.nama_grup,
-          deskripsi: req.body.deskripsi,
+          nama_kantor: req.body.nama_kantor,
+          lokasi: req.body.lokasi,
+          no_hp1: req.body.no_hp1,
+          no_hp2: req.body.no_hp2,
         },
         {
           where: {
@@ -88,7 +98,7 @@ let tblgrupController = {
           },
         }
       );
-      return res.status(200).json({ message: "Data Berhasil Diupdate" });
+      return res.status(200).json({ message: "Data Berhasil di update" });
     } catch (error) {
       console.log(error);
       return res.status(500).json({ error: Errors.SERVER_ERROR });
@@ -97,12 +107,12 @@ let tblgrupController = {
 
   delete: async (req, res) => {
     try {
-      const tblgrup = await Tbl_grup.destroy({
+      const tblkantor = await Tbl_kantor.destroy({
         where: {
           id: req.params.id,
         },
       });
-      return res.status(200).json(tblgrup);
+      return res.status(200).json({ message: "Data Berhasil di hapus" });
     } catch (error) {
       console.log(error);
       return res.status(500).json({ error: Errors.SERVER_ERROR });
@@ -110,4 +120,4 @@ let tblgrupController = {
   },
 };
 
-export default tblgrupController;
+export default tblkantorController;

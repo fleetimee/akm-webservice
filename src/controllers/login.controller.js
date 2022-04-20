@@ -2,6 +2,9 @@ import Tbl_user from "../models/Tbl_user";
 import JwtService from "../services/jwt.service";
 import * as Yup from "yup";
 import { Errors } from "../utils/errors";
+import Tbl_grup from "../models/Tbl_grup";
+import Tbl_kantor from "../models/Tbl_kantor";
+import Tbl_menu from "../models/Tbl_menu";
 
 let loginController = {
   login: async (req, res) => {
@@ -16,7 +19,26 @@ let loginController = {
 
       let { username, password } = req.body;
 
-      const user = await Tbl_user.findOne({ where: { username, password } });
+      const user = await Tbl_user.findOne({
+        where: { username, password },
+        include: [
+          {
+            model: Tbl_grup,
+            as: "grup",
+            include: [
+              {
+                model: Tbl_menu,
+                as: "menu",
+                attributes: ["id", "nama_menu"],
+              },
+            ],
+          },
+          {
+            model: Tbl_kantor,
+            as: "kantor",
+          },
+        ],
+      });
 
       if (!user)
         return res.status(400).send({ error: Errors.NONEXISTENT_USER });

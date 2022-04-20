@@ -1,590 +1,113 @@
 {
 	"info": {
-		"_postman_id": "55c682a2-b28b-4379-8294-a5e0a111ea00",
-		"name": "AKM Webservice",
+		"_postman_id": "ebe8df51-c999-4c83-a7c3-d5171738474f",
+		"name": "Webservice",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Debitur",
-			"item": [
-				{
-					"name": "Show all debitur",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/debitur",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Show all debitur",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/debitur",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"debitur"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "12828"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"321c-HFlpOtgrRVLC5foNG1sTOAUGBXQ\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 07:03:33 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"nama_debitur\": \"Ruben Ullrich\",\n        \"alamat_debitur\": \"58329 Hudson Forks\",\n        \"email\": \"Sylvia_Bailey79@yahoo.com\",\n        \"no_hp\": \"+624102943\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 2,\n        \"nama_debitur\": \"Doyle Mitchell\",\n        \"alamat_debitur\": \"78668 Pierce Forest\",\n        \"email\": \"Kurtis.Heidenreich59@yahoo.com\",\n        \"no_hp\": \"+620115685\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 4,\n        \"nama_debitur\": \"Ms. Delores Lesch\",\n        \"alamat_debitur\": \"614 Kerluke Lodge\",\n        \"email\": \"Clemens_Russel@yahoo.com\",\n        \"no_hp\": \"+621511245\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 5,\n        \"nama_debitur\": \"Jenny Armstrong\",\n        \"alamat_debitur\": \"5128 Franey Overpass\",\n        \"email\": \"Rod_Pouros@gmail.com\",\n        \"no_hp\": \"+624231941\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 6,\n        \"nama_debitur\": \"Jaime Dooley\",\n        \"alamat_debitur\": \"94513 Annalise Neck\",\n        \"email\": \"Jarrod_Larson@hotmail.com\",\n        \"no_hp\": \"+626398379\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 7,\n        \"nama_debitur\": \"Norma Durgan\",\n        \"alamat_debitur\": \"589 Angeline Stravenue\",\n        \"email\": \"Ruthe.Spencer28@hotmail.com\",\n        \"no_hp\": \"+623721933\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 8,\n        \"nama_debitur\": \"Jessie Mann\",\n        \"alamat_debitur\": \"493 Jeffery Place\",\n        \"email\": \"Thaddeus4@gmail.com\",\n        \"no_hp\": \"+629352560\",\n        \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n    },\n    {\n        \"id\": 9,\n        \"nama_debitur\": \"Mrs. Larry Little\",\n        \"alamat_debitur\": \"073 Altenwerth Way\",\n        \"email\": \"Reilly.Rodriguez@gmail.com\",\n        \"no_hp\": \"+628246778\",\n        \"createdAt\": \"2022-04-07T03:35:47.046Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.046Z\"\n    },\n    {\n        \"id\": 10,\n        \"nama_debitur\": \"Tom Carter\",\n        \"alamat_debitur\": \"85599 Will Shore\",\n        \"email\": \"Constance.Botsford@yahoo.com\",\n        \"no_hp\": \"+620734271\",\n        \"createdAt\": \"2022-04-07T03:35:47.046Z\",\n        \"updatedAt\": \"2022-04-07T03:35:47.046Z\"\n    },\n    {\n        \"id\": 11,\n        \"nama_debitur\": \"Ada Lebsack\",\n        \"alamat_debitur\": \"923 Soledad Greens\",\n        \"email\": \"Webster65@yahoo.com\",\n        \"no_hp\": \"+627901312\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 12,\n        \"nama_debitur\": \"Matthew Lehner\",\n        \"alamat_debitur\": \"9207 Smith Drive\",\n        \"email\": \"Eleanore92@yahoo.com\",\n        \"no_hp\": \"+620876050\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 13,\n        \"nama_debitur\": \"Monique Greenfelder\",\n        \"alamat_debitur\": \"9962 Robbie Summit\",\n        \"email\": \"Fiona.Kozey@gmail.com\",\n        \"no_hp\": \"+627344473\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 14,\n        \"nama_debitur\": \"Doris Ledner V\",\n        \"alamat_debitur\": \"04963 Dibbert Roads\",\n        \"email\": \"Rosina51@yahoo.com\",\n        \"no_hp\": \"+626886717\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 15,\n        \"nama_debitur\": \"Dr. Ollie Runte\",\n        \"alamat_debitur\": \"2564 Mayra Branch\",\n        \"email\": \"Henriette.Goodwin7@yahoo.com\",\n        \"no_hp\": \"+627885466\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 16,\n        \"nama_debitur\": \"Ernest Davis\",\n        \"alamat_debitur\": \"594 Langworth Track\",\n        \"email\": \"Violet.Will@hotmail.com\",\n        \"no_hp\": \"+629052697\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 17,\n        \"nama_debitur\": \"Gwen Erdman Jr.\",\n        \"alamat_debitur\": \"0198 Bogan Via\",\n        \"email\": \"Elna.Fritsch@gmail.com\",\n        \"no_hp\": \"+624757780\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 18,\n        \"nama_debitur\": \"Kristi Tillman\",\n        \"alamat_debitur\": \"235 Palma Lakes\",\n        \"email\": \"Demond_Breitenberg63@yahoo.com\",\n        \"no_hp\": \"+621780367\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 19,\n        \"nama_debitur\": \"Rosa Christiansen\",\n        \"alamat_debitur\": \"11451 Maggie Viaduct\",\n        \"email\": \"Tess38@yahoo.com\",\n        \"no_hp\": \"+621790631\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 20,\n        \"nama_debitur\": \"Ms. Jake Goodwin\",\n        \"alamat_debitur\": \"3882 Heathcote Fork\",\n        \"email\": \"Ceasar_VonRueden13@hotmail.com\",\n        \"no_hp\": \"+625800706\",\n        \"createdAt\": \"2022-04-07T03:36:03.606Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.606Z\"\n    },\n    {\n        \"id\": 21,\n        \"nama_debitur\": \"Ms. Jamie Dooley\",\n        \"alamat_debitur\": \"918 Braeden Mount\",\n        \"email\": \"Murl.Ondricka@hotmail.com\",\n        \"no_hp\": \"+621820580\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 22,\n        \"nama_debitur\": \"Elijah Cronin\",\n        \"alamat_debitur\": \"9652 Glover Tunnel\",\n        \"email\": \"Miracle.Jakubowski@gmail.com\",\n        \"no_hp\": \"+626487729\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 23,\n        \"nama_debitur\": \"Jasmine Lebsack MD\",\n        \"alamat_debitur\": \"96144 Mills Mall\",\n        \"email\": \"Jayden64@yahoo.com\",\n        \"no_hp\": \"+629397591\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 24,\n        \"nama_debitur\": \"Don Romaguera\",\n        \"alamat_debitur\": \"73107 Christiansen Mission\",\n        \"email\": \"Kaleigh24@yahoo.com\",\n        \"no_hp\": \"+623038379\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 25,\n        \"nama_debitur\": \"Billie Hills\",\n        \"alamat_debitur\": \"38823 Stamm Square\",\n        \"email\": \"Mariah.Ritchie97@hotmail.com\",\n        \"no_hp\": \"+622072873\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 26,\n        \"nama_debitur\": \"Ms. Jeffrey Hyatt\",\n        \"alamat_debitur\": \"9042 O'Connell Circles\",\n        \"email\": \"Nels84@hotmail.com\",\n        \"no_hp\": \"+628806667\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 27,\n        \"nama_debitur\": \"Kate Runte\",\n        \"alamat_debitur\": \"76501 Balistreri Place\",\n        \"email\": \"Raheem_Wuckert@gmail.com\",\n        \"no_hp\": \"+628496201\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 28,\n        \"nama_debitur\": \"Mr. Rachael Bins\",\n        \"alamat_debitur\": \"4233 Schaefer Isle\",\n        \"email\": \"Evalyn49@gmail.com\",\n        \"no_hp\": \"+627306296\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 29,\n        \"nama_debitur\": \"Dianna Jenkins\",\n        \"alamat_debitur\": \"004 Hagenes Circle\",\n        \"email\": \"Noe_Bosco@gmail.com\",\n        \"no_hp\": \"+625264821\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 30,\n        \"nama_debitur\": \"Melody Armstrong\",\n        \"alamat_debitur\": \"316 Presley Parkways\",\n        \"email\": \"Albert.Boyer44@yahoo.com\",\n        \"no_hp\": \"+621710748\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 31,\n        \"nama_debitur\": \"Vivian Kovacek\",\n        \"alamat_debitur\": \"903 Jamir Extension\",\n        \"email\": \"Boris.Ratke@gmail.com\",\n        \"no_hp\": \"+624685713\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 32,\n        \"nama_debitur\": \"Gina Kassulke IV\",\n        \"alamat_debitur\": \"0182 Shanel Key\",\n        \"email\": \"Savanah76@gmail.com\",\n        \"no_hp\": \"+628316905\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 33,\n        \"nama_debitur\": \"Shannon O'Reilly\",\n        \"alamat_debitur\": \"31723 Prosacco Mountain\",\n        \"email\": \"Zion.Graham54@hotmail.com\",\n        \"no_hp\": \"+625906913\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 34,\n        \"nama_debitur\": \"Mae Morissette\",\n        \"alamat_debitur\": \"59592 Korbin Forge\",\n        \"email\": \"Anabel31@gmail.com\",\n        \"no_hp\": \"+629751957\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 35,\n        \"nama_debitur\": \"Edna Simonis\",\n        \"alamat_debitur\": \"239 Donnelly Avenue\",\n        \"email\": \"Elyse65@yahoo.com\",\n        \"no_hp\": \"+621481661\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 36,\n        \"nama_debitur\": \"Eleanor Kiehn\",\n        \"alamat_debitur\": \"09567 Schroeder Court\",\n        \"email\": \"Larry.Hermann@gmail.com\",\n        \"no_hp\": \"+623852621\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 37,\n        \"nama_debitur\": \"Mindy Shields\",\n        \"alamat_debitur\": \"48543 Glover Square\",\n        \"email\": \"Giovanna_Powlowski29@gmail.com\",\n        \"no_hp\": \"+621802587\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 38,\n        \"nama_debitur\": \"Shirley Streich\",\n        \"alamat_debitur\": \"0077 Scarlett Extensions\",\n        \"email\": \"Britney_Maggio@hotmail.com\",\n        \"no_hp\": \"+620346747\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 39,\n        \"nama_debitur\": \"Dr. Melinda Rosenbaum\",\n        \"alamat_debitur\": \"4156 Berenice Locks\",\n        \"email\": \"Jazlyn_Fritsch@hotmail.com\",\n        \"no_hp\": \"+625701747\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 40,\n        \"nama_debitur\": \"Shawn Grimes\",\n        \"alamat_debitur\": \"75164 Kailey Fall\",\n        \"email\": \"Karl.DuBuque@yahoo.com\",\n        \"no_hp\": \"+626665187\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 41,\n        \"nama_debitur\": \"Desiree Blick\",\n        \"alamat_debitur\": \"798 Kreiger Knoll\",\n        \"email\": \"Jovani.Bechtelar@hotmail.com\",\n        \"no_hp\": \"+623696947\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 42,\n        \"nama_debitur\": \"Miss Irvin Beahan\",\n        \"alamat_debitur\": \"5472 Walsh Mountain\",\n        \"email\": \"Lila42@gmail.com\",\n        \"no_hp\": \"+625259960\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 43,\n        \"nama_debitur\": \"Norman Gottlieb\",\n        \"alamat_debitur\": \"0301 Roberta Roads\",\n        \"email\": \"Blanca.Jenkins67@yahoo.com\",\n        \"no_hp\": \"+620686359\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 44,\n        \"nama_debitur\": \"Jacqueline Schaefer\",\n        \"alamat_debitur\": \"1810 Stokes Crescent\",\n        \"email\": \"Lisa3@yahoo.com\",\n        \"no_hp\": \"+621230153\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 45,\n        \"nama_debitur\": \"Rosa O'Kon\",\n        \"alamat_debitur\": \"827 Howell Hollow\",\n        \"email\": \"Karianne_Lemke36@hotmail.com\",\n        \"no_hp\": \"+626263046\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 46,\n        \"nama_debitur\": \"Terry Rodriguez DDS\",\n        \"alamat_debitur\": \"8200 Tremaine Burgs\",\n        \"email\": \"Mortimer.Spinka@hotmail.com\",\n        \"no_hp\": \"+620330912\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 47,\n        \"nama_debitur\": \"Alexandra Homenick\",\n        \"alamat_debitur\": \"9542 Gianni Way\",\n        \"email\": \"Dan12@hotmail.com\",\n        \"no_hp\": \"+627965810\",\n        \"createdAt\": \"2022-04-07T03:36:03.607Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.607Z\"\n    },\n    {\n        \"id\": 48,\n        \"nama_debitur\": \"Jaime Kozey\",\n        \"alamat_debitur\": \"6996 Mayert Gateway\",\n        \"email\": \"Richmond_Kirlin@hotmail.com\",\n        \"no_hp\": \"+629244275\",\n        \"createdAt\": \"2022-04-07T03:36:03.608Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.608Z\"\n    },\n    {\n        \"id\": 49,\n        \"nama_debitur\": \"Ruby Dare\",\n        \"alamat_debitur\": \"7369 Elizabeth Points\",\n        \"email\": \"Hilda.Stoltenberg76@gmail.com\",\n        \"no_hp\": \"+625436982\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 50,\n        \"nama_debitur\": \"Timmy Reynolds\",\n        \"alamat_debitur\": \"8983 Davis Avenue\",\n        \"email\": \"Lilian.Ward40@gmail.com\",\n        \"no_hp\": \"+621966641\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 51,\n        \"nama_debitur\": \"Bertha Daniel PhD\",\n        \"alamat_debitur\": \"7332 Aida Row\",\n        \"email\": \"Darlene_Kris@hotmail.com\",\n        \"no_hp\": \"+624948579\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 52,\n        \"nama_debitur\": \"Juanita Stoltenberg\",\n        \"alamat_debitur\": \"37919 Derick Mountains\",\n        \"email\": \"Jennings.Homenick@hotmail.com\",\n        \"no_hp\": \"+622880993\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 53,\n        \"nama_debitur\": \"Hope Stracke\",\n        \"alamat_debitur\": \"32851 Corwin Green\",\n        \"email\": \"Laura.Metz98@yahoo.com\",\n        \"no_hp\": \"+626231988\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 54,\n        \"nama_debitur\": \"Desiree Goldner\",\n        \"alamat_debitur\": \"05753 Jorge Via\",\n        \"email\": \"Uriel_Nienow@hotmail.com\",\n        \"no_hp\": \"+621255691\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 55,\n        \"nama_debitur\": \"Alex Senger\",\n        \"alamat_debitur\": \"66956 O'Kon Fields\",\n        \"email\": \"Leonardo.Prohaska@gmail.com\",\n        \"no_hp\": \"+620002220\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 56,\n        \"nama_debitur\": \"Daisy Jones\",\n        \"alamat_debitur\": \"15329 Alyson Springs\",\n        \"email\": \"Rodrigo64@yahoo.com\",\n        \"no_hp\": \"+623895626\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 57,\n        \"nama_debitur\": \"Lucille Mitchell\",\n        \"alamat_debitur\": \"9578 Elisabeth Orchard\",\n        \"email\": \"Fabian_Tremblay@gmail.com\",\n        \"no_hp\": \"+624072646\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 58,\n        \"nama_debitur\": \"Vivian Bogisich\",\n        \"alamat_debitur\": \"222 Raphaelle Roads\",\n        \"email\": \"Julius_Ebert@gmail.com\",\n        \"no_hp\": \"+627888295\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 59,\n        \"nama_debitur\": \"Stephen Koss\",\n        \"alamat_debitur\": \"2283 Kilback Gateway\",\n        \"email\": \"Dante_Huel@yahoo.com\",\n        \"no_hp\": \"+625717373\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 60,\n        \"nama_debitur\": \"Wilbur Deckow Sr.\",\n        \"alamat_debitur\": \"49132 Torp Green\",\n        \"email\": \"Kennedi16@gmail.com\",\n        \"no_hp\": \"+629951228\",\n        \"createdAt\": \"2022-04-07T03:36:03.610Z\",\n        \"updatedAt\": \"2022-04-07T03:36:03.610Z\"\n    },\n    {\n        \"id\": 61,\n        \"nama_debitur\": \"Novian Andika\",\n        \"alamat_debitur\": \"Jalan Sidomulyo1\",\n        \"email\": \"zane.227@gmail.com\",\n        \"no_hp\": \"62917782\",\n        \"createdAt\": \"2022-04-07T04:29:14.418Z\",\n        \"updatedAt\": \"2022-04-07T04:29:14.418Z\"\n    }\n]"
-						}
-					]
-				},
-				{
-					"name": "Show debitur by id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/debitur",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Show debitur by id",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/debitur/1",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"debitur",
-										"1"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "212"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"d4-1krPNCL1/XKhBXZl+sLInisy7iY\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:14:37 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id\": 1,\n    \"nama_debitur\": \"Ruben Ullrich\",\n    \"alamat_debitur\": \"58329 Hudson Forks\",\n    \"email\": \"Sylvia_Bailey79@yahoo.com\",\n    \"no_hp\": \"+624102943\",\n    \"createdAt\": \"2022-04-07T03:35:47.045Z\",\n    \"updatedAt\": \"2022-04-07T03:35:47.045Z\"\n}"
-						}
-					]
-				},
-				{
-					"name": "Add data debitur",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nama_debitur\": \"Sonia Eka Putri\",\r\n    \"alamat_debitur\": \"Jalan Merak No 5\",\r\n    \"email\": \"hello@fleetime.my.id\",\r\n    \"no_hp\": \"+6283819829\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/debitur",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Add data debitur",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"nama_debitur\": \"Sonia Eka Putri\",\r\n    \"alamat_debitur\": \"Jalan Merak No 5\",\r\n    \"email\": \"hello@fleetime.my.id\",\r\n    \"no_hp\": \"+6283819829\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "localhost:8080/api/debitur",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"debitur"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "209"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"d1-ADDtw+DsBJY+uZsIgnyhyHcwQDQ\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:10:29 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id\": 62,\n    \"nama_debitur\": \"Sonia Eka Putri\",\n    \"alamat_debitur\": \"Jalan Merak No 5\",\n    \"email\": \"hello@fleetime.my.id\",\n    \"no_hp\": \"+6283819829\",\n    \"updatedAt\": \"2022-04-07T06:10:29.822Z\",\n    \"createdAt\": \"2022-04-07T06:10:29.822Z\"\n}"
-						}
-					]
-				},
-				{
-					"name": "Edit data debitur",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nama_debitur\": \"Aulia Octaviani\",\r\n    \"alamat_debitur\": \"Jalan Rajawali No 5\",\r\n    \"email\": \"hi@fleetime.my.id\",\r\n    \"no_hp\": \"+62823819829\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/debitur/62",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur",
-								"62"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Edit data debitur",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"nama_debitur\": \"Aulia Octaviani\",\r\n    \"alamat_debitur\": \"Jalan Rajawali No 5\",\r\n    \"email\": \"hi@fleetime.my.id\",\r\n    \"no_hp\": \"+62823819829\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "localhost:8080/api/debitur/62",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"debitur",
-										"62"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "210"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"d2-MnC/pM8KOMKgzDCVG/7NlZeYIY0\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:19:23 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id\": 62,\n    \"nama_debitur\": \"Aulia Octaviani\",\n    \"alamat_debitur\": \"Jalan Rajawali No 5\",\n    \"email\": \"hi@fleetime.my.id\",\n    \"no_hp\": \"+62823819829\",\n    \"createdAt\": \"2022-04-07T06:10:29.822Z\",\n    \"updatedAt\": \"2022-04-07T06:19:23.197Z\"\n}"
-						}
-					]
-				},
-				{
-					"name": "Delete data debitur",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/debitur/62",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur",
-								"62"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Delete data debitur",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/debitur/62",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"debitur",
-										"62"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "29"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"1d-etXDvrYJSe469Hn2kKG1w14ZcoQ\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:21:07 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"message\": \"Debitur deleted\"\n}"
-						}
-					]
-				}
-			],
-			"description": "Module inputan form untuk Master Debitur"
-		},
-		{
 			"name": "User",
 			"item": [
 				{
-					"name": "Show all user",
+					"name": "Get User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/debitur",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Show all user",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/user",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"user"
-									]
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "813"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"32d-ei7zcdP7kLRcHb1WrJZm4bXV00Q\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:38:33 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Novian Andika\\n\",\n        \"email\": \"zane.227@gmail.com\",\n        \"password_hash\": \"12345678\",\n        \"createdAt\": \"2022-04-06T21:35:11.190Z\",\n        \"updatedAt\": \"2022-04-06T21:35:11.190Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Azmi\",\n        \"email\": \"zane.2271@gmail.com\",\n        \"password_hash\": \"$2a$08$SHzorxDmrOdwv5bUOQqQWOPE/jrgW1GD0rmFy9jhy0.3XH0QbMD5y\",\n        \"createdAt\": \"2022-04-06T21:37:52.809Z\",\n        \"updatedAt\": \"2022-04-06T21:37:52.809Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Azmi2\",\n        \"email\": \"zane.22712@gmail.com\",\n        \"password_hash\": \"$2a$08$6ndVmD8YEWLKz5b9VbQnpeac9tqU5RuIoTxLrgOP6OFqZ8UlEupI6\",\n        \"createdAt\": \"2022-04-06T22:34:39.092Z\",\n        \"updatedAt\": \"2022-04-06T22:34:39.092Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Sonia Eka Putri\",\n        \"email\": \"soniaekap2@gmail.com\",\n        \"password_hash\": \"$2a$08$MLthq/AQ7BvpfuqL9uwSB.uceBLcw0HFGA.YlK/BBWEybyLuG/0g2\",\n        \"createdAt\": \"2022-04-07T05:00:58.903Z\",\n        \"updatedAt\": \"2022-04-07T05:00:58.903Z\"\n    }\n]"
-						}
-					]
-				},
-				{
-					"name": "Show user by id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/debitur",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"debitur"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Show user by id",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/user/3",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"user",
-										"3"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "211"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"d3-5qOhCZZrHGvgOieZCJsvZbD07So\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:39:21 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id\": 3,\n    \"name\": \"Azmi2\",\n    \"email\": \"zane.22712@gmail.com\",\n    \"password_hash\": \"$2a$08$6ndVmD8YEWLKz5b9VbQnpeac9tqU5RuIoTxLrgOP6OFqZ8UlEupI6\",\n    \"createdAt\": \"2022-04-06T22:34:39.092Z\",\n    \"updatedAt\": \"2022-04-06T22:34:39.092Z\"\n}"
-						}
-					]
-				},
-				{
-					"name": "Edit user",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjo0LCJpYXQiOjE2NDkzMDkzNDcsImV4cCI6MTY0OTMxODk0NywianRpIjoiMSJ9.JMWdqZgl4Agj2vE9Nf1lJXXu3QXlZ0seEva2h8Sa0FE",
-									"type": "string"
-								}
-							]
+							}
 						},
+						"url": {
+							"raw": "localhost:8080/api/tbluser/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tbluser",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"octavia\",\r\n    \"email\": \"octavia@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"nama_lengkap\": \"Aulia Octaviani\",\r\n    \"grupId\": 7,\r\n    \"kantorId\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tbluser",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tbluser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tbluser/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tbluser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Octaviaa\",\r\n    \"email\": \"octaviaa@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"username\": \"octavia\",\r\n    \"email\": \"octavia@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"nama_lengkap\": \"Aulia Octavianii\",\r\n    \"grupId\": 7,\r\n    \"kantorId\": 4\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -592,276 +115,339 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/user/",
+							"raw": "localhost:8080/api/tbluser/4",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"user",
-								""
+								"tbluser",
+								"4"
 							]
-						},
-						"description": "Protected by auth middleware JWT, must use Bearer Token in Authorization tab"
-					},
-					"response": [
-						{
-							"name": "Edit user",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Octavia\",\r\n    \"email\": \"octavia@gmail.com\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "localhost:8080/api/user/63",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"user",
-										"63"
-									]
-								}
-							},
-							"status": "Unauthorized",
-							"code": 401,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "25"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"19-PoKNwbJddi9iGhWKI1/VXit6eqA\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:49:51 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"error\": \"Token invalid\"\n}"
-						},
-						{
-							"name": "Edit user",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Octaviaa\",\r\n    \"email\": \"octaviaa@gmail.com\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "localhost:8080/api/user/",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"user",
-										""
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "212"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"d4-x6TrRTyKqRlhFSG2mCVfggGVxWE\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:52:18 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id\": 4,\n    \"name\": \"Octaviaa\",\n    \"email\": \"octaviaa@gmail.com\",\n    \"password_hash\": \"$2a$08$MLthq/AQ7BvpfuqL9uwSB.uceBLcw0HFGA.YlK/BBWEybyLuG/0g2\",\n    \"createdAt\": \"2022-04-07T05:00:58.903Z\",\n    \"updatedAt\": \"2022-04-07T06:52:18.393Z\"\n}"
 						}
-					]
+					},
+					"response": []
 				},
 				{
-					"name": "Delete user",
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tbluser/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tbluser",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grup",
+			"item": [
+				{
+					"name": "Get Grup",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblgrup",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblgrup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Grup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_grup\": \"Admin\",\r\n    \"deskripsi\": \"Ini adalah grup Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblgrup",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblgrup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Grup",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblgrup",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblgrup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Grup",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_grup\": \"Analisis Kredit Mikro Petugas\",\r\n    \"deskripsi\": \"Grup khusus AKM\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblgrup/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblgrup",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Grup",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kantorId\": 11,\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblgrup/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblgrup",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kantor",
+			"item": [
+				{
+					"name": "Get Kantor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tblkantor/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblkantor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Kantor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblkantor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblkantor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Kantor Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_kantor\": \"Kantor Pusat/Cabang Utama\",\r\n    \"lokasi\": \"Jl. Tentara Pelajar No. 7 Yogyakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tblkantor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblkantor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Kantor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tblkantor/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tblkantor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Kantor",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/user/4",
+							"raw": "localhost:8080/api/tblkantor/4",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"user",
+								"tblkantor",
 								"4"
 							]
-						},
-						"description": "Protected by auth middleware JWT, must use Bearer Token in Authorization tab"
-					},
-					"response": [
-						{
-							"name": "Delete user",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "localhost:8080/api/user/4",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"user",
-										"4"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "17"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"11-qa4dieuZ7jGIVe3I40rng8X+VNo\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Apr 2022 06:54:54 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"msg\": \"Deleted\"\n}"
 						}
-					]
+					},
+					"response": []
 				}
-			],
-			"description": "Managemen user"
+			]
 		},
 		{
-			"name": "Sign up",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Sonia Eka Putri\",\r\n    \"email\": \"soniaekap2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/user",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"user"
-					]
-				}
-			},
-			"response": [
+			"name": "Menu",
+			"item": [
 				{
-					"name": "Sign up",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text",
-								"disabled": true
-							}
-						],
+					"name": "Get Menu",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Sonia Eka Putri\",\r\n    \"email\": \"soniaekap2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"nama_kewenangan\": \"Novian\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -869,52 +455,117 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/user",
+							"raw": "localhost:8080/api/tblmenu/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"api",
-								"user"
+								"tblmenu",
+								""
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Master Debitur",
+			"item": [
+				{
+					"name": "Get Debitur",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Add Debitur",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_debitur\": \"Sonia Eka Putria\",\r\n    \"alamat\": \"Jln Sidomulyo No 22\",\r\n    \"no_telp\": \"84349380498\",\r\n    \"no_ktp\": \"4444444444444444\",\r\n    \"no_selular\": \"083928983998\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "241"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"f1-55syi5d7LZtbI8Hikghn7920qrk\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 07 Apr 2022 05:00:58 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
+						"url": {
+							"raw": "localhost:8080/api/mstdebitur",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mstdebitur"
+							]
 						}
-					],
-					"cookie": [],
-					"body": "{\n    \"id\": 4,\n    \"name\": \"Sonia Eka Putri\",\n    \"email\": \"soniaekap2@gmail.com\",\n    \"password\": \"123456\",\n    \"updatedAt\": \"2022-04-07T05:00:58.903Z\",\n    \"createdAt\": \"2022-04-07T05:00:58.903Z\",\n    \"password_hash\": \"$2a$08$MLthq/AQ7BvpfuqL9uwSB.uceBLcw0HFGA.YlK/BBWEybyLuG/0g2\"\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "FInd Debitur",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Debitur",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_debitur\": \"Sonia Eka Putria\",\r\n    \"alamat\": \"Jln Sidomulyo No 22\",\r\n    \"no_telp\": \"84349380498\",\r\n    \"no_ktp\": \"4444444444444444\",\r\n    \"no_selular\": \"083928983998\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/mstdebitur/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mstdebitur",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Debitur",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/mstdebitur/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mstdebitur",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -925,7 +576,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"soniaekap2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"username\": \"octavia\",\r\n    \"password\": \"123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -942,210 +593,9 @@
 						"api",
 						"login"
 					]
-				},
-				"description": "Login to get Bearer Token"
-			},
-			"response": [
-				{
-					"name": "Login",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"soniaekap2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8080/api/login",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"login"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "398"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"18e-pcqygWCUjxvQXBG0AdHYWaUTtz8\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 07 Apr 2022 05:29:07 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"user\": {\n        \"id\": 4,\n        \"name\": \"Sonia Eka Putri\",\n        \"email\": \"soniaekap2@gmail.com\",\n        \"password_hash\": \"$2a$08$MLthq/AQ7BvpfuqL9uwSB.uceBLcw0HFGA.YlK/BBWEybyLuG/0g2\",\n        \"createdAt\": \"2022-04-07T05:00:58.903Z\",\n        \"updatedAt\": \"2022-04-07T05:00:58.903Z\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjo0LCJpYXQiOjE2NDkzMDkzNDcsImV4cCI6MTY0OTMxODk0NywianRpIjoiMSJ9.JMWdqZgl4Agj2vE9Nf1lJXXu3QXlZ0seEva2h8Sa0FE\"\n}"
 				}
-			]
-		},
-		{
-			"name": "Logout",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjo0LCJpYXQiOjE2NDkzMDkzNDcsImV4cCI6MTY0OTMxODk0NywianRpIjoiMSJ9.JMWdqZgl4Agj2vE9Nf1lJXXu3QXlZ0seEva2h8Sa0FE",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/logout",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"logout"
-					]
-				},
-				"description": "Protected by Auth Middleware"
 			},
-			"response": [
-				{
-					"name": "Logout berhasil",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/logout",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"logout"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "20"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"14-suJbLcxIhDWlKPX8QlvVBIhPX4o\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 07 Apr 2022 06:57:22 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"msg\": \"Authorized\"\n}"
-				},
-				{
-					"name": "Logout tidak memakai token",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8080/api/logout",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"logout"
-							]
-						}
-					},
-					"status": "Unauthorized",
-					"code": 401,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "25"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"19-PoKNwbJddi9iGhWKI1/VXit6eqA\""
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 07 Apr 2022 06:57:38 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"error\": \"Token invalid\"\n}"
-				}
-			]
+			"response": []
 		}
 	]
 }

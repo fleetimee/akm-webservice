@@ -28,6 +28,9 @@ class Tbl_user extends Model {
             isEmail: true,
           },
         },
+        nama_lengkap: {
+          type: Sequelize.STRING,
+        },
       },
       {
         sequelize,
@@ -43,8 +46,25 @@ class Tbl_user extends Model {
         allowNull: false,
       },
       as: "grup",
-    });
+    }),
+      this.belongsTo(models.Tbl_kantor, {
+        foreignKey: {
+          name: "kantorId",
+          allowNull: false,
+        },
+        as: "kantor",
+      });
   }
+
+  // static associate(models) {
+  //   this.belongsTo(models.Tbl_kantor, {
+  //     foreignKey: {
+  //       name: "kantorId",
+  //       allowNull: false,
+  //     },
+  //     as: "kantor",
+  //   });
+  // }
 
   checkPassword(password) {}
 }

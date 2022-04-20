@@ -26,8 +26,21 @@ class Tbl_grup extends Model {
         allowNull: false,
       },
       as: "user",
-    });
+    }),
+      this.belongsToMany(models.Tbl_menu, {
+        through: "Tbl_kewenangan",
+        foreignKey: "grupId",
+        as: "menu",
+      });
   }
+
+  // static associate(models) {
+  //   this.belongsToMany(models.Tbl_menu, {
+  //     through: "Tbl_kewenangan",
+  //     foreignKey: "grupId",
+  //     as: "menu",
+  //   });
+  // }
 }
 
 export default Tbl_grup;
