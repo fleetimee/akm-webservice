@@ -21,7 +21,9 @@ let mstdebiturController = {
 
   get: async (req, res) => {
     try {
-      const mstdebitur = await Mst_debitur.findAll();
+      const mstdebitur = await Mst_debitur.findAll({
+        order: [["id", "ASC"]],
+      });
       return res.status(200).json(mstdebitur);
     } catch (error) {
       console.log(error);

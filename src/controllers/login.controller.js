@@ -1,10 +1,11 @@
 import Tbl_user from "../models/Tbl_user";
-import JwtService from "../services/jwt.service";
-import * as Yup from "yup";
-import { Errors } from "../utils/errors";
 import Tbl_grup from "../models/Tbl_grup";
 import Tbl_kantor from "../models/Tbl_kantor";
 import Tbl_menu from "../models/Tbl_menu";
+
+import JwtService from "../services/jwt.service";
+import * as Yup from "yup";
+import { Errors } from "../utils/errors";
 
 let loginController = {
   login: async (req, res) => {

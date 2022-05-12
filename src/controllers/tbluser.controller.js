@@ -42,6 +42,7 @@ let tbluserController = {
             as: "kantor",
           },
         ],
+        order: [["id", "ASC"]],
       });
       return res.status(200).json(tbluser);
     } catch (error) {

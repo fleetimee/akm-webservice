@@ -42,6 +42,7 @@ let tblkantorController = {
             ],
           },
         ],
+        order: [["id", "ASC"]],
       });
       return res.status(200).json(tblkantor);
     } catch (error) {

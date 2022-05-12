@@ -14,6 +14,7 @@ let tblmenuController = {
             attributes: ["nama_grup"],
           },
         ],
+        order: [["id", "ASC"]],
       });
       return res.status(200).json(tblmenu);
     } catch (error) {

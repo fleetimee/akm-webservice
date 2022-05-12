@@ -37,6 +37,7 @@ let tblgrupController = {
             as: "menu",
           },
         ],
+        order: [["id", "ASC"]],
       });
       return res.status(200).json(tblgrup);
     } catch (error) {
