@@ -4,10 +4,10 @@
 </div>
 
 # akm-webservice
+
 REST API using Express, Sequelize, PostgreSQL
 
-## Getting Started 
-
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -26,47 +26,40 @@ cp .env.example .env
 yarn dev
 ```
 
-## API Endpoints
-https://documenter.getpostman.com/view/12616413/UVyvvuHk
-
-
-
 ## Configuration
 
 Variables for the environment
 
-| Option | Description |
-| ------ | ------ |
-| SERVER_PORT | Port the server will run on |
-| SERVER_JWT | true or false |
-| SERVER_JWT_SECRET | JWT secret |
-| SERVER_JWT_TIMEOUT | JWT duration time |
-| DB_DIALECT | "mysql", "postgresql", among others |
-| DB_HOST | Database host |
-| DB_USER | Database username |
-| DB_PASS | Database password |
-| DB_NAME | Database name |
-| AWS_KEYID | Access key ID |
-| AWS_SECRETKEY | User secret key |
-| AWS_BUCKET | Bucket name |
+| Option             | Description                         |
+| ------------------ | ----------------------------------- |
+| SERVER_PORT        | Port the server will run on         |
+| SERVER_JWT         | true or false                       |
+| SERVER_JWT_SECRET  | JWT secret                          |
+| SERVER_JWT_TIMEOUT | JWT duration time                   |
+| DB_DIALECT         | "mysql", "postgresql", among others |
+| DB_HOST            | Database host                       |
+| DB_USER            | Database username                   |
+| DB_PASS            | Database password                   |
+| DB_NAME            | Database name                       |
+| AWS_KEYID          | Access key ID                       |
+| AWS_SECRETKEY      | User secret key                     |
+| AWS_BUCKET         | Bucket name                         |
 
+## Commands for sequelize
 
-## Commands for sequelize 
 ```bash
 # Creates the database
-yarn sequelize db:create 
+yarn sequelize db:create
 
 # Drops the database
-yarn sequelize db:drop 
+yarn sequelize db:drop
 
 # Load migrations
-yarn sequelize db:migrate 
+yarn sequelize db:migrate
 
 # Undo migrations
-yarn sequelize db:migrate:undo:all 
+yarn sequelize db:migrate:undo:all
 
 # Load seeders
 yarn sequelize db:seed:all
 ```
-
-
